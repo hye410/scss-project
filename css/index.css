@@ -1,0 +1,503 @@
+@charset "utf-8";
+
+/* 공통 */
+.hide{
+  width:0; height:0;
+  font-size: 0; line-height: 0;
+  position: absolute; visibility: hidden;
+}
+
+.button{
+  display: inline-block;
+  text-align: right;
+  padding : 0 14px;
+  background-color: rgb(168, 54, 134);
+  font-weight: bold;
+  box-shadow: 1px 2px 3px rgb(105, 82, 93);
+}
+
+.button>a{
+  font-size:14px;
+  color:rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+}
+
+.button:active{
+  transform: translate(2px,2px);  
+}
+
+
+
+article{
+  width : 1180px;
+  margin: 0 auto;
+  padding : 70px 0;
+}
+
+article>h3{
+  font-family: 'Syne', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-indent: 14px;
+  line-height:50px;
+  margin-bottom:50px;
+}
+
+article .underline{
+  width:360px;
+  height: 2px;
+  display: block;
+}
+
+.goods{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.goods>figure{
+  width:260px;
+  height: auto;
+  padding:0;
+  margin-top:0;
+}
+
+.goods>figure>img{
+  width:100%;
+  height: auto;
+  margin-bottom:24px;  
+  border : 1px solid #fff;
+}
+
+.goods>figure>figcaption dt{
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  color : rgb(69, 83, 83);
+}
+
+.goods>figure>figcaption dd{
+  font-size: 14px;
+  margin-bottom: 16px;
+  color : rgb(69, 83, 83);
+  text-align: center;
+  line-height: 25px; 
+}
+
+.goods>figure>figcaption dd:last-child{
+  display: flex;
+  justify-content: center;
+  margin-bottom : 10px;
+  font-size : 14px;
+  line-height: 30px;
+}
+
+.goods>figure>figcaption dd:last-child>p.btn{
+  padding : 0 14px;
+  margin : 0 6px;
+  border : 1px solid rgb(111, 169, 202);
+}
+
+.goods>figure>figcaption dd:last-child>p.btn:active{
+  transform: translate(1px, 1px);  
+}
+
+.goods>figure>figcaption dd:last-child>p.btn>a{
+  display: block;
+  text-decoration: none;
+}
+
+
+/* header */
+header{
+  /* background-color: rgb(238, 235, 235); */
+  /* background-color: rgb(255, 221, 227); */
+  background-color: rgb(170, 221, 221);
+}
+
+div.header{
+  width : 1180px;
+  margin : 0 auto;
+  padding : 35px 0;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+div.header>h1>a>img{
+  width : 180px;
+  height: 30px;
+}
+
+/* nav */
+/* nav>ul{
+  display: flex;
+}
+
+nav>ul>li>a{
+  font-size: 14px;
+  color : #fff;
+  padding:0 14px;
+}
+
+nav>ul>li>a:hover{
+  font-weight: bold;
+} */
+
+nav .me-2{
+  border : none;
+}
+
+
+
+
+
+/* main */
+/* box01 */
+#box01{
+  background-color: #fff;
+}
+
+#box01>article{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+
+#box01>article>h3>img{
+  width : 590px;
+}
+
+#box01>article>h3{
+  position:relative;
+  padding-top:35px;
+}
+
+#box01>article>h3>span.label{
+  position:absolute;
+  top:70px;
+  right:35px;
+  display: block;
+  width : 70px;
+  height: 70px;
+  text-align: center;
+  display:flex;
+  align-items:center;
+  border-radius: 50%;
+  background-color:yellowgreen;
+  font-size: 20px;
+  color:#fff;
+  box-shadow: 1px 2px 3px #666;
+ 
+}
+
+#box01>article>dl{
+  width:480px;
+  padding : 70px 0;  
+  text-align: center;
+  color : rgb(62, 60, 60);
+}
+#box01>article>dl>dt{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom : 60px;
+  color : rgb(255, 0, 64);
+  font-family: 'Syne', sans-serif;
+}
+
+#box01>article>dl>dd{
+  font-size: 20px;
+  margin-bottom:24px;
+  line-height: 35px;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+#box01>article>dl>dd:nth-child(2){
+  font-weight: bold;
+  font-size:20px;
+}
+
+#box01>article>dl>dd>b{
+  font-weight: bold;
+}
+
+
+
+/* box02 */
+#box02{
+  /* background-color: rgb(255 204 226); */
+  background-color: rgb(189, 230, 230);
+}
+#box02>article{
+  display: flex;
+  justify-content: space-between;
+}
+
+#box02>article>h3>img{
+  width : 590px;
+}
+
+#box02>article>dl{
+  width:480px;
+  padding : 35px 0;  
+  text-align: center;
+  color : rgb(255, 255, 255);
+}
+
+#box02>article>dl>dt{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom : 60px;
+  color : rgb(255, 0, 64);
+  font-family: 'Syne', sans-serif;
+}
+
+#box02>article>dl>dd{
+  font-size: 20px;
+  margin-bottom:35px;
+  line-height: 35px;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+#box02>article>dl>dd>b{
+  font-weight: bold;
+}
+
+
+/* box03 */
+#box03{
+  background-color:  #fff;
+}
+
+#box03>article>h3{
+  color : rgb(118, 182, 194);
+}
+
+#box03>article>h3>span.underline{
+  background-color: rgb(118, 182, 194);
+}
+
+#box03>article>div.goods>figure>img{
+  border : 1px solid rgb(216, 216, 219);
+}
+
+#box03>article>div.goods>figure> figcaption dd:last-child>p.btn{
+  background-color : rgb(118, 182, 194);
+}
+
+#box03>article>div.goods>figure> figcaption dd:last-child>p.btn>a{
+  color : #fff;
+}
+
+.btn {color : #000;}
+
+/* box04 */
+
+#box04{
+  /* background-color: rgb(255 204 226); */
+  background-color: rgb(189, 230, 230);
+}
+
+#box04>article>h3{
+  color:#fff;
+}
+
+#box04>article>h3>.underline{
+  background-color: #fff;
+}
+
+#box04>article>div.goods>figure>figcaption dd:last-child>p.btn{
+  background-color : #fff;
+}
+
+#box04>article>div.goods>figure>figcaption dd:last-child>p.btn>a{
+  color : rgb(118, 182, 194);
+}
+/* box05 */
+
+#box05{
+  background-color: #fff;
+}
+
+#box05>article>h3{
+  color:rgb(118, 182, 194);
+}
+
+#box05>article>h3>span.underline{
+  background-color:rgb(118, 182, 194);
+}
+
+#box05>article>div.goods>figure> figcaption dd:last-child>p.btn{
+  background-color : rgb(118, 182, 194);
+}
+
+#box05>article>div.goods>figure> figcaption dd:last-child>p.btn>a{
+  color : #fff;
+}
+
+/* aside */
+aside>div.show{
+  width : 100%;
+  overflow: hidden;
+}
+aside>div.show>.slide>.all{
+  width : 300%;
+  display: flex;
+  margin-bottom : 0;
+  padding-left : 0;
+}
+
+aside>div.show>.slide>.all>li{
+  width : 33.33333333333333%;
+  height: 100%;
+}
+
+aside>div.show>.slide>.all>li>img{
+  width : 100%;
+}
+aside>div.show>.slide{
+  position:relative;
+}
+aside>div.show>.slide>.prev{
+  position:absolute;
+  top:calc( 50% - 35px);
+  left:12px;
+  display: block;
+  font-size: 70px;
+  color : #666;
+}
+
+aside>div.show>.slide>.next{
+  position:absolute;
+  top:calc( 50% - 35px);
+  right:12px;
+  display: block;
+  font-size: 70px;
+  color : #666;
+}
+
+aside>.messenger{
+  position : fixed;
+  bottom : 100px;
+  right:35px;
+  border : none;
+  background-color: transparent;
+}
+
+aside>.messenger:hover{
+  cursor : pointer;
+  background-color: transparent;
+  border : none;
+}
+
+aside>.messenger>img{
+  width : 35px;
+  height: 35px;  
+}
+
+
+/* footer */
+footer{
+  /* background-color: rgb(255, 221, 227); */
+  background-color: rgb(170, 221, 221);
+  padding : 35px 0  14px;
+}
+
+footer>#footer{
+  width : 1180px;
+  margin : 0 auto 35px;
+  display: flex;
+  justify-content: space-between;  
+}
+
+#footer>div.fbox01>img{
+  width : 180px;
+  height: 30px;
+  margin-bottom: 35px;
+}
+
+#footer>div.fbox01>dl{
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  width : 610px;
+  color:#fff;
+  margin-bottom : 0;
+}
+
+#footer>div.fbox01>dl>dt{
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#footer>div.fbox01>dl>dd{
+  border-right: 1px solid #fff;
+  padding-right: 3px;
+  margin : 0 3px 5px 0;
+}
+
+#footer>div.fbox01>dl>dd:nth-child(6){
+  border : none;
+}
+
+#footer>div.fbox01>dl>dd:last-child{
+  border : none;
+}
+
+#footer>div.fbox02>ul{
+  display: flex;
+  justify-content: flex-end;
+  /* margin-bottom:30px; */
+}
+
+#footer>div.fbox02>ul>li{
+  font-size: 35px;
+  padding : 0 14px;
+  color : #fff;
+}
+
+#footer>div.fbox02>dl{
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  width : 300px;
+  color:#fff;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+#footer>div.fbox02>dl>dt{
+  font-weight: bold;
+  margin: 0 0 15px 5px;
+}
+
+#footer>div.fbox02>dl>dd{
+  padding-right: 3px;
+  margin : 0 3px 5px 15px;
+}
+
+#footer>div.fbox02>dl>dt:first-child{
+  font-size: 24px;
+}
+
+#footer>div.fbox02>dl>dd:nth-child(2){
+  font-size: 24px;
+}
+
+#footer>div.fbox02>dl>dd:nth-child(6){
+  border : none;
+}
+
+#footer>div.fbox02>dl>dd:last-child{
+  border : none;
+}
+
+footer>small{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  /* color : rgb(62, 60, 60); */
+  color:#fff;
+}

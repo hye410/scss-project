@@ -1,0 +1,93 @@
+
+.hide{
+  width:0; height:0;
+  font-size: 0; line-height: 0;
+  position: absolute; visibility: hidden;
+}
+
+.button{
+  display: inline-block;
+  text-align: right;
+  padding : 0 14px;
+  background-color: rgb(168, 54, 134);
+  font-weight: bold;
+  box-shadow: 1px 2px 3px rgb(105, 82, 93);
+}
+
+.button>a{
+  font-size:14px;
+  color:rgb(255, 255, 255);
+  display: block;
+}
+
+article{
+  width : 1180px;
+  margin: 0 auto;
+  padding : 70px 0;
+}
+
+article>h3{
+  font-family: 'Syne', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-indent: 14px;
+  line-height:50px;
+  margin-bottom:50px;
+}
+
+article .underline{
+  width:360px;
+  height: 2px;
+  display: block;
+}
+
+.goods{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.goods>figure{
+  width:260px;
+  height: auto;
+}
+
+.goods>figure>img{
+  width:100%;
+  height: auto;
+  margin-bottom:24px;  
+  border : 1px solid #fff;
+}
+
+.goods>figure>figcaption dt{
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  color : rgb(69, 83, 83);
+}
+
+.goods>figure>figcaption dd{
+  font-size: 14px;
+  margin-bottom: 16px;
+  color : rgb(69, 83, 83);
+  text-align: center;
+  line-height: 25px; 
+}
+
+.goods>figure>figcaption dd:last-child{
+  display: flex;
+  justify-content: center;
+  margin-bottom : 10px;
+  font-size : 14px;
+  line-height: 30px;
+}
+
+.goods>figure>figcaption dd:last-child>p.btn{
+  padding : 0 14px;
+  margin : 0 6px;
+  border : 1px solid rgb(216, 216, 219);
+}
+
+.goods>figure>figcaption dd:last-child>p.btn>a{
+  display: block;
+}

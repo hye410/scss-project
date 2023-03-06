@@ -1,0 +1,36 @@
+// color
+$white : rgb(255,255,255);
+$red : rgb(255, 0, 64);
+$gray : #666;
+$back_color_main : rgb(170, 221, 221);
+$back_color_sub : rgb(189, 230, 230);
+$font_color_title : rgb(69, 83, 83);
+$font_color_text : rgb(62, 60, 60);
+$font_color_h3 : rgb(118, 182, 194);
+
+
+
+// size
+$content : 1180px;
+$fontXs : 12px;
+$fontS : 14px;
+$fontM : 24px;
+$fontL : 30px;
+$fontXl : 35px;
+$full : 100%;
+
+// style
+
+$font_title : 'Syne', sans-serif;
+$font_text : 'Gowun Dodum', sans-serif;
+
+// 축약
+
+$bcm : $back_color_main;
+$bcs : $back_color_sub;
+$fct : $font_color_title;
+$fctxt : $font_color_text;
+$fch3 : $font_color_h3;
+
+$ft : $font_title;
+$ftxt : $font_text;

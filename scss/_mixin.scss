@@ -1,0 +1,10 @@
+@use './variable.scss' as * ;
+
+@mixin content($padding:70px 0){
+  width : $contetn;
+  margin : 0 auto;
+  padding : $padding;
+}
+
+
+
