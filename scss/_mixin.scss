@@ -1,10 +1,44 @@
 @use './variable.scss' as * ;
 
 @mixin content($padding:70px 0){
-  width : $contetn;
+  width : $content;
   margin : 0 auto;
   padding : $padding;
 }
 
+@mixin flex($align-items:center){
+  display: flex;
+  justify-content: space-between;
+  align-items: $align-items;
+}
 
+@mixin dl($padding:70px 0,$color:rgb(62,60,60)){
+  width:480px;
+  padding : $padding;  
+  text-align: center;
+  color : $color;
+}
 
+@mixin dt{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom : 60px;
+  color : rgb(255, 0, 64);
+  font-family: 'Syne', sans-serif;
+}
+
+@mixin dd($bottom:24px){
+  font-size: 20px;
+  margin-bottom:$bottom;
+  line-height: 35px;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+@mixin btn{
+  position:absolute;
+  top:calc( 50% - 35px);
+  right:12px;
+  display: block;
+  font-size: 70px;
+  color : #666;
+}

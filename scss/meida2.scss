@@ -1,0 +1,107 @@
+$breakpoint-mobile : 580px;
+$breakpoint-tablet : 980px;
+$breakpoint-web : 1180px;
+
+@mixin mobile{
+  @media (max-width : $breakpoint-mobile - 1px){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (min-width : $breakpoint-mobile) and (max-width : $breakpoint-tablet - 1px){
+    @content;
+  }
+}
+
+@mixin web{
+  @media (min-width : $breakpoint-tablet) and (max-width : $breakpoint-web){
+    @content;
+  }
+}
+
+//적용
+
+@include web{
+
+  div.header{
+    width : 100%;
+  }
+  
+  article{
+    width : 100%;
+    margin: 0 auto;
+    padding : 50px 0;
+
+  .goods{
+    padding : 0 35px;
+      figure{
+        width : 20%;
+        dt{
+          font-size: 13px;
+          margin-bottom : 14px;
+          line-height: 23px;
+        }
+        dd{
+          font-size: 13px;
+          margin-bottom:14px;
+          line-height: 23px;
+        }
+      }
+    } 
+  }
+#box01{
+  dl{
+    width : 40%;
+  }
+}
+
+  aside{
+    .messenger{
+      right: 0;
+      img{
+        width : 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  footer{
+    padding : 20px 0;
+    #footer{
+      width : 100%;
+      margin-bottom :10px;
+      padding : 2%;
+    }
+  }
+}
+@include tablet{
+  article{
+    width : 100%;
+    margin: 0 auto;
+    padding : 50px 0;
+
+  .goods{
+    padding : 0 35px;
+      figure{
+        width : 50%;
+      }
+    } 
+  }
+
+}
+@include mobile{
+  article{
+    width : 100%;
+    margin: 0 auto;
+    padding : 50px 0;
+
+  .goods{
+    padding : 0 35px;
+      figure{
+        width : 100%;
+        
+      }
+    } 
+  }
+}

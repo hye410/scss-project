@@ -1,0 +1,422 @@
+@use './variable' as *;
+@import './mixin';
+
+.hide{
+  width:0; height:0;
+  font-size: 0; line-height: 0;
+  position: absolute; visibility: hidden;
+}
+
+.button{
+  display: inline-block;
+  text-align: right;
+  padding : 0 $fontS;
+  background-color: rgb(168, 54, 134);
+  font-weight: bold;
+  box-shadow: 1px 2px 3px rgb(105, 82, 93);
+}
+
+.button>a{
+  font-size:$fontS;
+  color:$white;
+  display: block;
+  text-decoration: none
+}
+
+article{
+  @include content();
+  // padding : 70px 0;
+}
+
+article>h3{
+  font-family: 'Syne', sans-serif;
+  font-size: $fontL;
+  font-weight: bold;
+  text-indent: $fontS;
+  line-height:50px;
+  margin-bottom:50px;
+}
+
+article .underline{
+  width:360px;
+  height: 2px;
+  display: block;
+}
+
+.goods{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.goods>figure{
+  width:260px;
+  height: auto;
+}
+
+.goods>figure>img{
+  width:$full;
+  height: auto;
+  margin-bottom:$fontM;  
+  border : 1px solid #fff;
+}
+
+.goods>figure>figcaption dt{
+  font-size: $fontS;
+  text-align: center;
+  margin-bottom: 16px;
+  color : $fct;
+}
+
+.goods>figure>figcaption dd{
+  font-size: $fontS;
+  margin-bottom: 16px;
+  color : $fct;
+  text-align: center;
+  line-height: 25px; 
+}
+
+.goods>figure>figcaption dd:last-child{
+  display: flex;
+  justify-content: center;
+  margin-bottom : 10px;
+  font-size : $fontS;
+  line-height: $fontL;
+}
+
+.goods>figure>figcaption dd:last-child>p.btn{
+  padding : 0 $fontS;
+  margin : 0 6px;
+  border : 1px solid rgb(216, 216, 219);
+}
+
+.goods>figure>figcaption dd:last-child>p.btn>a{
+  display: block;
+}
+
+// header
+header{
+  background-color: $bcm;
+
+  .header{
+    @include content($padding:$fontXL 0);
+    @include flex;
+
+    h1{
+      a{
+        img{
+          width : 180px;
+          height : $fontL;
+        }
+      }
+    }
+  }
+}
+
+// box01
+#box01{
+  background-color: $white;
+  article{
+    @include flex($align-items:flex-start);
+    flex-wrap: row-reverse;
+
+    h3{
+      position:relative;
+      padding-top : $fontXL;
+      img{
+        width : 590px;
+      }
+      span.label{
+        position:absolute;
+        top:$fontXL*2;
+        right:$fontXL;
+        display: block;
+        width : $fontXL*2;
+        height: $fontXL*2;
+        text-align: center;
+        display:flex;
+        align-items:center;
+        border-radius: ($full/2);
+        background-color:yellowgreen;
+        font-size: 20px;
+        color:$white;
+        box-shadow: 1px 2px 3px #666;
+      }
+    }
+
+    dl{
+      @include dl;
+
+      dt{
+        @include dt;
+      }
+
+      dd{
+        @include dd;
+        b{
+          font-weight: bold;
+        }
+      }
+
+      dd:nth-child(2){
+        font-weight: bold;
+        font-size:20px;
+      }
+    }
+  }
+}
+
+// box02
+
+#box02{
+  background-color: $bcs;
+  article{
+    @include flex($align-items:flex-start);
+    h3{
+      img{
+        width : 590px;
+      }
+    }
+    dl{
+      @include dl($padding:$fontXL 0,$color:$white);
+
+      dt{
+        @include dt;
+      }
+
+      dd{
+        @include dd($bottom:$fontXL);
+        b{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// box03
+
+#box03{
+  background-color: $white;
+
+  article{
+    h3{
+      color : $fch3;
+      span.underline{
+        background-color: $fch3;
+      }
+    }
+    div.goods{
+      figure{
+        img{
+          border : 1px solid rgb(216, 216, 219);
+        };
+        figcaption{
+          dl{
+            dd:last-child{
+              p.btn{
+                color : #000;
+                a {color : $white}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// box04
+
+#box04{
+  background-color: $bcs;
+  article{
+    h3{
+      color : $white;
+      .underline{
+        background-color: $white;
+      }
+    }
+    div.goods{
+      figure{
+        figcaption{
+          dl{
+            dd:last-child{
+              p.btn{
+                background-color: $white;
+                a{
+                  color : $fch3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// box05
+#box05{
+  background-color: $white;
+  article{
+    h3{
+      color : $fch3;
+      .underline{
+        background-color: $fch3;
+      }
+    }
+    div.goods{
+      figure{
+        figcaption{
+          dl{
+            dd:last-child{
+              p.btn{
+                background-color : $fch3;
+                a{
+                  color : $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// aside
+aside{
+  div.show{
+    width :$full;
+    overflow: hidden;
+    .slide{
+      position : relative;
+      .all{
+        width : $full*3;
+        display: flex;
+        margin-bottom : 0;
+        padding-left : 0;
+        li{
+          width : 33.33333333333333%;
+          height: $full;
+          img{
+            width : $full;
+          }
+        }
+      }
+      .prev{
+        @include btn;
+      }
+      .next{
+        @include btn;
+      }
+    }
+  }
+  .messenger{
+    position : fixed;
+    bottom : 100px;
+    right:$fontXL;
+    border : none;
+    background-color: transparent;
+    img{
+      width : $fontXL;
+      height : $fontXL;
+    }
+  }
+  .messenger:hover{
+    cursor : pointer;
+    background-color: transparent;
+    border : none;
+  }
+}
+
+// footer
+
+footer{
+  background-color: $bcm;
+  padding : $fontXL 0 $fontS;
+
+  #footer{
+    @include content($padding:0);
+    margin-bottom : $fontXL;
+    @include flex($align-items:flex-start);
+
+    div.fbox01{
+      img{
+        width : 180px;
+        height: $fontL;
+        margin-bottom : $fontXL;
+      }
+      dl{
+        font-size: $fontXS;
+        display: flex;
+        flex-wrap: wrap;
+        width : 610px;
+        color:$white;
+        margin-bottom : 0;
+        dt{
+          font-weight: bold;
+          margin-right: 5px;
+        }
+        dd{
+          border-right: 1px solid $white;
+          padding-right: 3px;
+          margin : 0 3px 5px 0;
+        }
+        dd:nth-child(6){
+          border : none;
+        }
+        dd:last-child{
+          border :none;
+        }
+      }
+      }
+      div.fbox02{
+        ul{
+          display: flex;
+          justify-content: flex-end;
+          li{
+            font-size: $fontXL;
+            padding : 0 $fontS;
+            color : $white;
+          }
+        }
+        dl{
+          font-size: $fontXS;
+          display: flex;
+          flex-wrap: wrap;
+          width : 300px;
+          color:$white;
+          justify-content: flex-end;
+          margin-bottom: 0;
+          dt{
+            font-weight: bold;
+            margin: 0 0 15px 5px;
+          }
+          dt:first-child{
+            font-size: $fontM;
+          }
+          dd{
+            padding-right: 3px;
+            margin : 0 3px 5px 15px;
+          }
+          dd:nth-child(2){
+            font-size: $fontM;
+          }
+          dd:nth-child(6){
+            border : none;
+          }
+          dd:last-child{
+            border : none;
+          }
+        }
+      }
+    }
+    small{
+      display: block;
+      text-align: center;
+      font-size: $fontXS;
+      color:$white;
+    }
+  }
