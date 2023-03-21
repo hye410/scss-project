@@ -1,9 +1,6 @@
 import $ from "jquery";
-// import tip from './index2';
-// tip()
-$(function(){
-  // $('[data-toggle="tooltip"]').tooltip();
 
+$(function(){
   $('ul.all>li').on('mouseenter',function(e){    
     $('.prev').css('cursor','pointer');
     $('.next').css('cursor','pointer');
@@ -15,11 +12,7 @@ $(function(){
   $('ul.all>li:last').prependTo('ul.all');
   $('ul.all').css('margin-left','-'+wli+'px');
 
-  // $('ul.all>li').on('mouseleave',function(e){
-  //   $('.prev').css('display','none');
-  //   $('.next').css('display','none');
-  // })
-  
+ 
   timer();
   setInterval(timer,3000);
   ani();

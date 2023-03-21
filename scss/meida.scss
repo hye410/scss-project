@@ -75,3 +75,33 @@ $breakpoint-web : 1180px;
     }
   }
 }
+@include tablet{
+  article{
+    width : 100%;
+    margin: 0 auto;
+    padding : 50px 0;
+
+  .goods{
+    padding : 0 35px;
+      figure{
+        width : 50%;
+      }
+    } 
+  }
+
+}
+@include mobile{
+  article{
+    width : 100%;
+    margin: 0 auto;
+    padding : 50px 0;
+
+  .goods{
+    padding : 0 35px;
+      figure{
+        width : 100%;
+        
+      }
+    } 
+  }
+}
