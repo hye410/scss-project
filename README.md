@@ -1,10 +1,11 @@
 # SCSS Project
-<center>
-<img
-src="./pic/scss-main.png"
-width ="400px"
- />
-</center>
+
+<p align="center">
+ <img
+ src="./pic/scss-main.png"
+ width ="400px"
+  />
+</p>
 
 ## About This Project
 SCSS와 BootStrap을 사용하여 만든 페이지입니다.
